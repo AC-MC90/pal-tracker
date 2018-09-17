@@ -1,0 +1,12 @@
+repositories {
+   mavenCentral()
+}
+
+plugins {
+    id "java"
+    id 'org.springframework.boot' version '2.0.5.RELEASE'
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+}
