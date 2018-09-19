@@ -6,15 +6,21 @@ plugins {
     id "org.flywaydb.flyway" version "4.2.0"
 }
 
+/*apply plugin: "java"
+apply plugin: "org.springframework.boot" version "1.5.4.RELEASE"
+apply plugin: "org.flywaydb.flyway" version "4.2.0"*/
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-starter-jdbc")
-    compile("mysql:mysql-connector-java:6.0.6")
     compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.1")
+    compile("org.springframework.boot:spring-boot-starter-jdbc")
+
+    compile("mysql:mysql-connector-java:6.0.6")
+
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
